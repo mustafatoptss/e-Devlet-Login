@@ -1,259 +1,256 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>e-Devlet Giriş</title>
-  <style>
-    .mainCont {
-      background-color: white;
-      border: 1px solid rgb(238, 238, 238);
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 580px;
-      width: 783px;
-      border-radius: 10px;
-      position: relative;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Devlet Giriş</title>
+    <style>
+        .mainCont {
+            background-color: white;
+            border: 1px solid rgb(238, 238, 238);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 580px;
+            width: 783px;
+            border-radius: 10px;
+            position: relative;
+        }
 
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgb(238, 239, 240);
-    }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(238, 239, 240);
+        }
 
-    .lefttopicon {
-      position: absolute;
-      left: 30px;
-      top: 18px;
-      height: 68px;
-      width: 280px;
-    }
+        .lefttopicon {
+            position: absolute;
+            left: 30px;
+            top: 18px;
+            height: 68px;
+            width: 280px;
+        }
 
-    .righttopicon {
-      position: absolute;
-      right: 30px;
-      top: 18px;
-      height: 40px;
-      width: 150px;
-    }
+        .righttopicon {
+            position: absolute;
+            right: 30px;
+            top: 18px;
+            height: 40px;
+            width: 150px;
+        }
 
-    .lbl1 {
-      position: absolute;
-      right: 30px;
-      top: 35px;
-    }
+        .lbl1 {
+            position: absolute;
+            right: 30px;
+            top: 35px;
+        }
 
-    .metin {
-      position: absolute;
-      top: 73px;
-      right: 30px;
-      font-size: 13px;
-    }
+        .metin {
+            position: absolute;
+            top: 73px;
+            right: 30px;
+            font-size: 13px;
+        }
 
-    .btnContanier {
-      position: absolute;
-      top: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      display: flex;
-      justify-content: space-evenly;
-    }
+        .btnContanier {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-    .btnContanier button {
-      height: 40px;
-      width: 160px;
-      padding: 15px;
-      font-size: 14px;
-      border: 1px solid rgb(206, 205, 205);
-      border-radius: 5px;
-      background-color: white;
-      color: rgb(116, 114, 114);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+        .btnContanier button {
+            height: 40px;
+            width: 160px;
+            padding: 15px;
+            font-size: 14px;
+            border: 1px solid rgb(206, 205, 205);
+            border-radius: 5px;
+            background-color: white;
+            color: rgb(116, 114, 114);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    button:hover {
-      color: rgb(0, 81, 255);
-    }
+        button:hover {
+            color: rgb(0, 81, 255);
+        }
 
-    hr {
-      width: 85%;
-      border: 0;
-      border-top: 2px solid #dfdfdf;
-      position: absolute;
-      top: 160px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
-    }
+        hr {
+            width: 85%;
+            border: 0;
+            border-top: 2px solid #dfdfdf;
+            position: absolute;
+            top: 160px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+        }
 
-    .lbl2 {
-      position: absolute;
-      top: 180px;
-      font-size: 15px;
-      margin-left: 50px;
-      line-height: 25px;
-      width: 85%;
-      font-family: 'Roboto', sans-serif;
-    }
+        .lbl2 {
+            position: absolute;
+            top: 180px;
+            font-size: 15px;
+            margin-left: 50px;
+            line-height: 25px;
+            width: 85%;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    .formContainer {
-      position: absolute;
-      top: 270px;
-      left: 50px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+        .formContainer {
+            position: absolute;
+            top: 270px;
+            left: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    .formrow {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      margin-left: 55px;
-    }
+        .formrow {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: 55px;
+        }
 
-    .lbltc {
-      font-size: 15px;
-      font-weight: 500;
-      margin: 0;
-    }
+        .lbltc {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0;
+        }
 
-    .text1 {
-      width: 400px;
-      height: 35px;
-      padding: 5px 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding-right: 30px; /* Sağ tarafta ikon için yeterli alan bırakıyoruz */
-    }
+        .text1 {
+            width: 400px;
+            height: 35px;
+            padding: 5px 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding-right: 30px;
+        }
 
-    .inputtcConteiner {
-      position: relative;
-    }
+        .inputtcConteiner {
+            position: relative;
+        }
 
-    .inputtcConteiner i {
-      position: absolute;
-      right: 10px; /* İkonu sağa yerleştiriyoruz */
-      top: 50%;
-      transform: translateY(-50%); /* Yatayda ortalama */
-      font-size: 20px;
-      color: #aaa;
-    }
+        .inputtcConteiner i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa;
+        }
 
-    .lbl4 {
-      margin-left: 190px;
-      font-size: 13px;
-      font-family: 'Roboto', sans-serif;
-      margin-top: 6px; /* Burada mesafeyi artırıyoruz */
-    }
+        .lbl4 {
+            margin-left: 190px;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 6px;
+        }
 
-    /* Şifre inputunun altındaki boşluğu daha belirgin hale getirmek */
-    .formrow:last-child {
-      margin-bottom: 8px; /* Şifre inputu ile lbl4 arasındaki boşluk */
-    }
-    .bottomButtons {
-  display: flex;
-  justify-content: center;  /* Yatayda ortalar */
-  align-items: center;      /* Dikeyde ortalar */
-  gap: 10px;                /* Butonlar arasına boşluk ekler */
-  width: 100%;              /* Genişlik %100 yapıldı */
-  margin-top: 30px;         /* Text input'larından sonra yerleştirilmesi için */
-}
+        .formrow:last-child {
+            margin-bottom: 8px;
+        }
 
-.bttmbtns {
-  height: 40px;
-  font-size: 16px;
-  background-color: lightblue;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        .bottomButtons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            margin-top: 30px;
+        }
 
-.short-btn {
-  width: 120px;
-  background-color: #D7D7D7;
-  border-radius: 20px;
-  font-weight: bold;
-  color: grey;
-}
+        .bttmbtns {
+            height: 40px;
+            font-size: 16px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.long-btn {
-  width: 300px;
-  background-color: #0071BC;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-}
+        .short-btn {
+            width: 120px;
+            background-color: #D7D7D7;
+            border-radius: 20px;
+            font-weight: bold;
+            color: grey;
+        }
 
-
-  </style>
+        .long-btn {
+            width: 300px;
+            background-color: #0071BC;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="mainCont">
-    <img class="lefttopicon" src="edk-logo.png" alt="">
-    <img class="righttopicon" src="edevlet.png" alt="">
-    <div class="lbl1"><h5>e-Devlet Kapısı</h5></div>
-    <div class="metin">https://www.turkiye.gov.tr</div>
+    <div class="mainCont">
+        <img class="lefttopicon" src="edk-logo.png" alt="">
+        <img class="righttopicon" src="edevlet.png" alt="">
+        <div class="lbl1"><h5>e-Devlet Kapısı</h5></div>
+        <div class="metin">https://www.turkiye.gov.tr</div>
 
-    <div class="btnContanier">
-      <button><b>e-Devlet Şifresi</b></button>
-      <button><b>Mobil İmza</b></button>
-      <button><b>Elektronik İmza</b></button>
-      <button><b>Diğer</b></button>
-    </div>
-
-    <hr>
-
-    <div class="lbl2">
-      T.C. Kimlik Numaranızı ve e-Devlet Şifrenizi kullanarak kimliğiniz doğrulandıktan sonra işleminize kaldığınız yerden devam edebilirsiniz.
-      <a href="https://www.turkiye.gov.tr" style="text-decoration: none; color: #0071BC; font-weight: bold;">e-Devlet Şifresi Nedir, Nasıl Alınır?</a>
-    </div>
-
-    <div class="formContainer">
-      <div class="formrow">
-        <label class="lbltc" for="tc"> <b>T.C. Kimlik No</b></label>
-        <div class="inputtcConteiner">
-            <input type="text" id="tc" class="text1" placeholder="T.C. Kimlik No">
-            <i class="fa fa-keyboard-o"></i> <!-- T.C. Kimlik No inputu için ikon -->
+        <div class="btnContanier">
+            <button><b>e-Devlet Şifresi</b></button>
+            <button><b>Mobil İmza</b></button>
+            <button><b>Elektronik İmza</b></button>
+            <button><b>Diğer</b></button>
         </div>
-      </div>
 
-      <div class="formrow">
-        <label class="lbltc" for="sifre"><b>e-Devlet Şifresi</b></label>
-        <div class="inputtcConteiner">
-            <input type="password" id="sifre" class="text1" placeholder="Şifre">
-            <i class="fa fa-keyboard-o"></i> <!-- Şifre inputu için ikon -->
+        <hr>
+
+        <div class="lbl2">
+            T.C. Kimlik Numaranızı ve e-Devlet Şifrenizi kullanarak kimliğiniz doğrulandıktan sonra işleminize kaldığınız yerden devam edebilirsiniz.
+            <a href="https://www.turkiye.gov.tr" style="text-decoration: none; color: #0071BC; font-weight: bold;">e-Devlet Şifresi Nedir, Nasıl Alınır?</a>
         </div>
-      </div>
-      <label style="opacity: 0.7;" for="" class="lbl4">* e-Devlet <a style="text-decoration: none; color: #0071BC; font-weight: bold;  " href="">şifrenizi unutmanız durumunda</a> doğruladığınız cep <br> telefonunuzdan yenileme işlemi yapabilirsiniz.</label>
-     
-        
 
-        <div class="bottomButtons"><button class="bttmbtns short-btn">İptal</button>
+        <div class="formContainer">
+            <div class="formrow">
+                <label class="lbltc" for="tc"> <b>T.C. Kimlik No</b></label>
+                <div class="inputtcConteiner">
+                    <input type="text" id="tc" class="text1" placeholder="T.C. Kimlik No">
+                    <i class="fa fa-keyboard-o"></i>
+                </div>
+            </div>
 
-        <button class="bttmbtns long-btn">Giriş Yap</button>
+            <div class="formrow">
+                <label class="lbltc" for="sifre"><b>e-Devlet Şifresi</b></label>
+                <div class="inputtcConteiner">
+                    <input type="password" id="sifre" class="text1" placeholder="Şifre">
+                    <i class="fa fa-keyboard-o"></i>
+                </div>
+            </div>
+            <label style="opacity: 0.7;" for="" class="lbl4">* e-Devlet <a style="text-decoration: none; color: #0071BC; font-weight: bold;  " href="">şifrenizi unutmanız durumunda</a> doğruladığınız cep <br> telefonunuzdan yenileme işlemi yapabilirsiniz.</label>
+
+
+            <div class="bottomButtons"><button class="bttmbtns short-btn">İptal</button>
+
+            <button class="bttmbtns long-btn">Giriş Yap</button>
+        </div>
+        </div>
+
+
     </div>
-    </div>
-    
-   
-  </div>
 
 </body>
 </html>
